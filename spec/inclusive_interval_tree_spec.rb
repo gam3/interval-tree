@@ -64,7 +64,6 @@ describe "InclusiveIntervalTree::Tree" do
     
     describe 'given non-array full-closed "(1..4)" and a point query "3"' do
       it 'returns an array contains a half-open interval (1...5)]' do
-        skip
         InclusiveIntervalTree::Tree.new(1...5).search(3).must_equal [1..4]
       end
     end

@@ -27,8 +27,8 @@ module InclusiveIntervalTree
 
   class Tree
     def initialize(ranges)
-      ranges_excl = ensure_inclusive_end([ranges].flatten)
-      @top_node = divide_intervals(ranges_excl)
+      ranges_incl = ensure_inclusive_end([ranges].flatten)
+      @top_node = divide_intervals(ranges_incl)
     end
     attr_reader :top_node
 
@@ -85,7 +85,7 @@ module InclusiveIntervalTree
       ret = []
       ranges.each do |r|
         if r.exclude_end?
-	  raise "exclusive"
+	  ret << Range.new(r.first, r.last-1)
 	else
 	  ret << r
 	end

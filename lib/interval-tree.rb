@@ -1,4 +1,4 @@
 
-include 'inclucive-interval-tree'
-include 'exclusive-interval-tree'
+require 'inclusive-interval-tree'
+require 'exclusive-interval-tree'
 

@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["G. Allen Morris III"]
-  s.date = "2012-11-06"
+  s.date = "2012-11-12"
   s.description = "http://wikipedia.com/wiki/Interval_tree"
   s.email = "gam3-pause@gam3.net"
   s.homepage = "https://github.com/gam3/interval-tree"
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.summary = "An interval tree implimentation for ruby"
   s.files   = [ 'lib/inclusive-interval-tree.rb',
                 'lib/interval-tree-node.rb',
-		'lib/interval_tree.rb', 
+		'lib/interval-tree.rb', 
                 'lib/exclusive-interval-tree.rb' ]
 
   if s.respond_to? :specification_version then

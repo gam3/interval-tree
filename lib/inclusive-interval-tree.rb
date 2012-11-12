@@ -19,13 +19,14 @@
 #  p t.search(1..3) => [0..2, 1..3, 3..4]
 #
 # note: result intervals are always returned
-# in the "left-closed and right-open" style that can be expressed
-# by three-dotted Range object literals (first..last)
+# in the "left-closed and right-closed" style that can be expressed
+# by two-dotted Range object literals (first..last)
 #
 
-module InclusiveIntervalTree
+require 'interval-tree-node'
 
-  class Tree
+module IntervalTree
+  class InclusiveTree
     def initialize(ranges)
       ranges_incl = ensure_inclusive_end([ranges].flatten)
       @top_node = divide_intervals(ranges_incl)
@@ -114,18 +115,7 @@ module InclusiveIntervalTree
       result.uniq
     end
   end # class Tree
-
-  class Node
-    def initialize(x_center, s_center, left_node, right_node)
-      @x_center = x_center
-      @s_center = s_center.sort_by(&:first)
-      @left_node = left_node
-      @right_node = right_node
-    end
-    attr_reader :x_center, :s_center, :s_max, :left_node, :right_node   
-  end # class Node
-  
-end # module InclusiveIntervalTree
+end # module IntervalTree
 
 if  __FILE__ == $0
   puts "Inclusive Interval Tree Library"

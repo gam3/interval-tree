@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = "interval-tree"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["G. Allen Morris III"]
-  s.date = "2012-11-12"
+  s.date = "2013-08-20"
   s.description = "http://wikipedia.com/wiki/Interval_tree"
   s.email = "gam3-pause@gam3.net"
   s.homepage = "https://github.com/gam3/interval-tree"

@@ -1,0 +1,18 @@
+Source: interval-tree
+Section: ruby
+Priority: optional
+Maintainer: Ruby Concept Engine
+Uploaders: G. Allen Morris III <gam3@fluential.com>
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.8~)
+Standards-Version: 3.9.2
+Homepage: https://github.com/gam3/interval-tree
+XS-Ruby-Versions: all
+
+Package: interval-tree
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, ruby-pg
+Provides: interval-tree
+Description: Ruby Interval Tree
+ A ruby implimentation of an intervale tree

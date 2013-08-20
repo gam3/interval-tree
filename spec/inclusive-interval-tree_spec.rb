@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require 'spec/helper'
+
 require 'minitest/spec'
 require 'minitest/autorun'
 

@@ -21,3 +21,5 @@ pkg
 doc
 
 ## PROJECT::SPECIFIC
+
+interval-tree-*.gem

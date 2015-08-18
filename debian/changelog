@@ -1,3 +1,9 @@
+interval-tree (0.1.4) unstable; urgency=low
+
+  * m3 branch
+
+ -- Build Master <buildmaster@fluential.net>  Tue, 23 Sep 2014 14:46:10 -0700
+
 interval-tree (0.1.3) unstable; urgency=low
 
   * Sign gem

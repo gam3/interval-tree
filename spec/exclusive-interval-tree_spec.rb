@@ -2,7 +2,7 @@
 
 require 'spec/helper'
 
-require 'minitest/spec'
+#require 'minitest/spec'
 require 'minitest/autorun'
 
 require 'exclusive-interval-tree'
